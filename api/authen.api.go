@@ -21,8 +21,9 @@ func hashPassword(passwordjwt string) (string, error) {
 func setupAuthenAPI(router *gin.Engine) {
 	authenAPI := router.Group("/api/v2")
 	{
-
+      
 		authenAPI.POST("/login", login)
+		authenAPI.GET("/login", test)
 		authenAPI.POST("/register", register)
 	}
 }
@@ -62,4 +63,7 @@ func register(c *gin.Context) {
 		c.JSON(200, gin.H{"data": "unable to bind data"})
 	}
 
+}
+func test(c *gin.Context){
+	c.JSON(200,gin.H{"status":"ok"})
 }
