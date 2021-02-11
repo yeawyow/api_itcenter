@@ -1,0 +1,21 @@
+### getuser
+POST http://localhost:8081/api/v2/getuser HTTP/1.1 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI1OTU1MTUsImlkIjoyMjYsInVzZXJuYW1lIjoieWVhdzIifQ.m3ItSYWWz6GE0ixqIVe-2Mja4CQyfFPOfx8mAN25pg8
+
+
+### edit user
+POST http://localhost:8081/api/v2/edituser HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"1234",
+    "passwordjwt":"456",
+    "pnameID":1,
+    "fname":"matupoom",
+    "lname":"craibout",
+    "groupUserID":1,
+    "HospitalDepartmentID":2,
+    "positoinID":5,
+    "status":"2"
+
+}

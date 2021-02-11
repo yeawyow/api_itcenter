@@ -1,0 +1,32 @@
+
+### login POST
+POST http://localhost:8081/api/v2/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"yeaw2",
+    "passwordjwt":"1234"
+   
+
+}
+
+
+
+### register
+POST http://localhost:8081/api/v2/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"yeaw2",
+    "passwordjwt":"1234",
+    "pnameID":1,
+    "fname":"matupoom",
+    "lname":"craibout",
+    "groupUserID":1,
+    "HospitalDepartmentID":2,
+    "positoinID":5,
+    "status":"2"
+
+}
+
+
